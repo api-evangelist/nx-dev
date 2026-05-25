@@ -1,0 +1,359 @@
+aid: nx-dev
+url: https://raw.githubusercontent.com/api-evangelist/nx-dev/refs/heads/main/apis.yml
+apis:
+- aid: nx-dev:nx-cli
+  name: Nx CLI
+  tags:
+  - Build
+  - CLI
+  - Monorepo
+  - TaskRunner
+  humanURL: https://nx.dev/reference/nx-commands
+  properties:
+  - url: https://nx.dev/reference/nx-commands
+    type: Documentation
+  - url: https://nx.dev/getting-started/intro
+    type: GettingStarted
+  - url: https://www.npmjs.com/package/nx
+    name: nx on npm
+    type: Package
+  description: The Nx command-line interface — the primary surface for running, caching, and orchestrating tasks
+    across a monorepo. Built in Rust for performance and extensible via TypeScript plugins. Supports `nx run`,
+    `nx affected`, `nx graph`, `nx generate`, `nx migrate`, `nx release`, `nx sync`, and `nx init` to incrementally
+    adopt Nx in existing npm, pnpm, or yarn workspaces. Auto-discovers tasks from `package.json` scripts and from
+    Vite, Webpack, Jest, Vitest, ESLint, Gradle, Maven, .NET, and Go projects.
+- aid: nx-dev:nx-plugin-system
+  name: Nx Plugin System
+  tags:
+  - Plugins
+  - Generators
+  - Executors
+  - Monorepo
+  humanURL: https://nx.dev/extending-nx/intro/getting-started
+  properties:
+  - url: https://nx.dev/extending-nx/intro/getting-started
+    type: Documentation
+  - url: https://nx.dev/plugin-registry
+    type: Documentation
+  - url: https://nx.dev/concepts/inferred-tasks
+    type: Documentation
+  description: The Nx plugin system lets you package generators, executors, and inferred-task plugins for any
+    tech stack. Official plugins cover Angular, React, Next.js, Remix, Nuxt, Vue, Node, Express, Nest, Expo,
+    React Native, Detox, Vite, Webpack, Rspack, Esbuild, Rollup, Jest, Vitest, Cypress, Playwright, Storybook,
+    ESLint, Web Components, Express, Nx Plugin (meta), Gradle, and .NET. Community plugins extend coverage to
+    Go, Rust, Deno, Python, and many other stacks. Plugins ship as npm packages and integrate via `nx.json`.
+- aid: nx-dev:nx-graph-and-affected
+  name: Nx Graph and Affected
+  tags:
+  - DependencyGraph
+  - AffectedCommands
+  - Monorepo
+  humanURL: https://nx.dev/features/explore-graph
+  properties:
+  - url: https://nx.dev/features/explore-graph
+    type: Documentation
+  - url: https://nx.dev/features/run-tasks
+    type: Documentation
+  - url: https://nx.dev/ci/features/affected
+    type: Documentation
+  description: Nx builds a project graph and a task graph from your workspace, then uses them to run only the
+    tasks affected by a given change set. `nx graph` opens an interactive visualization; `nx affected -t build`
+    or `nx affected -t test` runs only what is needed. The graph is also consumed by Nx Console, the AI agent
+    tooling, and Nx Cloud distribution.
+- aid: nx-dev:nx-cache
+  name: Nx Cache
+  tags:
+  - Cache
+  - LocalCache
+  - Monorepo
+  humanURL: https://nx.dev/features/cache-task-results
+  properties:
+  - url: https://nx.dev/features/cache-task-results
+    type: Documentation
+  - url: https://nx.dev/concepts/how-caching-works
+    type: Documentation
+  description: Nx caches task outputs locally based on a hash of inputs (source files, env vars, configuration,
+    and dependencies). Cached tasks are replayed instantly without re-execution. Nx 22.7 introduces worktree-aware
+    caching across git worktrees and faster cache replay (1110 tasks restored in ~1.16s). Cache can be shared
+    with teammates and CI via Nx Cloud remote caching.
+- aid: nx-dev:nx-release
+  name: Nx Release
+  tags:
+  - Release
+  - Versioning
+  - Publishing
+  - Changelog
+  humanURL: https://nx.dev/features/manage-releases
+  properties:
+  - url: https://nx.dev/features/manage-releases
+    type: Documentation
+  - url: https://nx.dev/recipes/nx-release
+    type: Documentation
+  description: `nx release` is Nx's first-class versioning, changelog generation, and publishing pipeline for
+    monorepos. Supports independent and fixed versioning, conventional commits, semantic versioning, GitHub
+    Releases, and npm publishing. Works across the polyglot plugin ecosystem.
+- aid: nx-dev:nx-console
+  name: Nx Console
+  tags:
+  - IDE
+  - Editor
+  - VSCode
+  - JetBrains
+  humanURL: https://nx.dev/getting-started/editor-setup
+  properties:
+  - url: https://nx.dev/getting-started/editor-setup
+    type: Documentation
+  - url: https://github.com/nrwl/nx-console
+    type: SourceCode
+  - url: https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console
+    name: VS Code Marketplace
+    type: Tool
+  - url: https://plugins.jetbrains.com/plugin/21060-nx-console
+    name: JetBrains Marketplace
+    type: Tool
+  description: Nx Console is the official IDE extension for Nx and Lerna, available for Visual Studio Code,
+    Cursor, and JetBrains IDEs (WebStorm, IntelliJ, RustRover). Provides project detail views, generator UI,
+    workspace and task visualization, Nx Cloud CI notifications, and AI chat enrichment that feeds workspace
+    context and current Nx documentation into Copilot, Cursor, and other AI assistants.
+- aid: nx-dev:nx-cloud-remote-cache
+  name: Nx Cloud Remote Cache
+  tags:
+  - RemoteCache
+  - CI
+  - NxCloud
+  humanURL: https://nx.dev/ci/features/remote-cache
+  properties:
+  - url: https://nx.dev/ci/features/remote-cache
+    type: Documentation
+  - url: https://nx.dev/ci/recipes/security/access-tokens
+    type: Documentation
+  description: Nx Cloud Remote Cache shares cached task outputs across machines and CI agents. Cache hits skip
+    redundant builds and tests in CI and on teammates' machines. Authenticated via `NX_CLOUD_ACCESS_TOKEN`.
+    Hobby tier includes 50,000 monthly credits free; pay-as-you-go beyond that.
+- aid: nx-dev:nx-agents
+  name: Nx Agents (Distributed Task Execution)
+  tags:
+  - CI
+  - DistributedExecution
+  - NxCloud
+  - Agents
+  humanURL: https://nx.dev/ci/features/distribute-task-execution
+  properties:
+  - url: https://nx.dev/ci/features/distribute-task-execution
+    type: Documentation
+  - url: https://nx.dev/ci/features/dynamic-agents
+    type: Documentation
+  description: Nx Agents distribute task execution across managed CI machines with automatic load-balancing,
+    flaky-task retries, and dynamic agent allocation sized to the affected task graph. Includes Atomized E2E
+    test splitting that breaks Cypress and Playwright suites into file-level units distributed across agents.
+    Per Nrwl benchmarks, Nx Agents are 4x faster and 30% cheaper than equivalent GitHub Actions runners.
+- aid: nx-dev:nx-self-healing-ci
+  name: Nx Self-Healing CI
+  tags:
+  - AI
+  - CI
+  - NxCloud
+  - Agents
+  - SelfHealing
+  humanURL: https://nx.dev/ci/features/self-healing-ci
+  properties:
+  - url: https://nx.dev/ci/features/self-healing-ci
+    type: Documentation
+  description: AI-powered CI agent that watches Nx Cloud pipelines, detects failing tasks, analyzes root causes,
+    proposes fixes as PR suggestions, and re-runs flaky tests automatically. Now supports GitHub, GitLab,
+    Bitbucket, and Azure DevOps. Available on Team and Enterprise tiers; included in the AI-native monorepo
+    workflow that pairs with Nx's MCP server and Nx Console AI enrichment.
+- aid: nx-dev:nx-mcp
+  name: Nx MCP Server
+  tags:
+  - MCP
+  - AI
+  - Agents
+  - ModelContextProtocol
+  humanURL: https://nx.dev/features/enhance-AI
+  properties:
+  - url: https://nx.dev/features/enhance-AI
+    type: Documentation
+  - url: https://github.com/nrwl/nx-console
+    name: nx-console (ships the MCP server)
+    type: SourceCode
+  description: The Nx MCP server exposes the Nx project graph, task graph, generator catalog, and documentation
+    to MCP-compatible AI agents (Claude Code, Cursor, Copilot, Windsurf). Lets agents reason about workspace
+    structure, run generators, dispatch tasks, and consult version-correct Nx docs without hallucinating. Ships
+    inside the nx-console extension and as a standalone command.
+common:
+- url: https://nx.dev
+  name: Nx
+  type: Portal
+- url: https://nx.dev/docs
+  type: Documentation
+- url: https://nx.dev/getting-started/intro
+  type: GettingStarted
+- url: https://nx.dev/getting-started/installation
+  type: Documentation
+- url: https://nx.dev/getting-started/tutorials
+  name: Tutorials
+  type: Courses
+- url: https://nx.dev/concepts
+  name: Concepts
+  type: Documentation
+- url: https://nx.dev/reference/nx-json
+  name: nx.json Reference
+  type: Documentation
+- url: https://nx.dev/reference/project-configuration
+  name: Project Configuration Reference
+  type: Documentation
+- url: https://nx.dev/reference/nx-commands
+  name: CLI Reference
+  type: Documentation
+- url: https://nx.dev/plugin-registry
+  name: Plugin Registry
+  type: Documentation
+- url: https://nx.dev/community
+  name: Community
+  type: Forum
+- url: https://nx.dev/blog
+  type: Blog
+- url: https://nx.dev/changelog
+  name: Nx Changelog
+  type: Changelog
+- url: https://nx.dev/pricing
+  name: Nx Cloud Pricing
+  type: Pricing
+- url: https://cloud.nx.app/get-started
+  name: Nx Cloud Sign Up
+  type: SignUp
+- url: https://status.nx.app
+  name: Nx Cloud Status
+  type: StatusPage
+- url: https://github.com/nrwl
+  name: Nrwl GitHub Organization
+  type: GitHubOrganization
+- url: https://github.com/nrwl/nx
+  name: nrwl/nx
+  type: SourceCode
+- url: https://github.com/nrwl/nx-console
+  name: nrwl/nx-console
+  type: SourceCode
+- url: https://github.com/nrwl/nx-examples
+  name: nrwl/nx-examples
+  type: CodeExamples
+- url: https://github.com/nrwl/nx-recipes
+  name: nrwl/nx-recipes
+  type: CodeExamples
+- url: https://github.com/nrwl/nx-labs
+  name: nrwl/nx-labs
+  type: SourceCode
+- url: https://github.com/nrwl/nx-cloud-helm
+  name: Nx Cloud Helm Charts
+  type: SourceCode
+- url: https://www.npmjs.com/package/nx
+  name: nx (npm)
+  type: Package
+- url: https://www.npmjs.com/package/create-nx-workspace
+  name: create-nx-workspace (npm)
+  type: Package
+- url: https://www.npmjs.com/org/nx
+  name: @nx scope on npm
+  type: Package
+- url: https://nx.dev/getting-started/editor-setup
+  name: Editor Setup
+  type: Documentation
+- url: https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console
+  name: Nx Console for VS Code
+  type: Tool
+- url: https://plugins.jetbrains.com/plugin/21060-nx-console
+  name: Nx Console for JetBrains
+  type: Tool
+- url: https://discord.gg/nx
+  name: Nx Discord
+  type: Forum
+- url: https://x.com/nxdevtools
+  name: Nx on X
+  type: SocialMedia
+- url: https://www.youtube.com/@nxdevtools
+  name: Nx YouTube
+  type: Training
+- url: https://nrwl.io
+  name: Nrwl
+  type: Portal
+- url: https://nrwl.io/services
+  name: Nrwl Services
+  type: Documentation
+- url: https://nx.dev/conf
+  name: Monorepo World
+  type: Events
+- type: Features
+  data:
+  - Nx CLI — Rust-powered task runner for monorepos with `nx run`, `nx affected`, `nx graph`, `nx generate`,
+    `nx migrate`, `nx release`, `nx sync`, and `nx init`
+  - Polyglot plugin system — first-party plugins for Angular, React, Next.js, Remix, Nuxt, Vue, Node, Express,
+    Nest, Expo, React Native, Detox, Vite, Webpack, Rspack, Esbuild, Rollup, Jest, Vitest, Cypress, Playwright,
+    Storybook, ESLint, Web Components, Gradle, and .NET
+  - Inferred tasks — auto-discovers `package.json` scripts and tasks from Vite, Webpack, Jest, Vitest, ESLint,
+    Gradle, Maven, .NET, Go, and more without manual configuration
+  - Project graph and task graph with `nx graph` interactive visualization
+  - Affected commands (`nx affected -t build|test|lint`) run only what changed since a base ref
+  - Local task caching with input-hash invalidation; worktree-aware in Nx 22.7
+  - Task sandboxing (Nx 22.6) traces undeclared file I/O similar to Bazel
+  - `nx release` for versioning, changelog generation, and publishing
+  - `nx migrate` automates version upgrades with codemods for major Nx and plugin releases
+  - `nx sync` synchronizes generated files (TypeScript references, package.json deps) across the workspace
+  - Nx Console IDE extension for VS Code, Cursor, and JetBrains IDEs
+  - Nx MCP server — exposes workspace graph, generators, and docs to MCP-compatible AI agents
+  - AI-enhanced chat in VS Code/Cursor through Nx Console workspace context injection
+  - Nx Cloud Remote Cache shares cache hits across teammates and CI
+  - Nx Agents distribute tasks across managed CI machines with dynamic agent allocation
+  - Atomized E2E test splitting for Cypress and Playwright
+  - Self-Healing CI — AI agent detects failed tasks, proposes fixes as PR suggestions, retries flaky tests
+  - CI provider integrations: GitHub, GitLab, Bitbucket, Azure DevOps, CircleCI, Jenkins
+  - Nx Cloud self-hosted deployment via Helm charts (Enterprise)
+  - `create-nx-workspace` scaffolds new workspaces; `nx init` adopts Nx incrementally
+  - Conformance rules and circular-dependency detection (Enterprise)
+  - Workspace analytics with CI duration percentiles
+  sources:
+  - https://nx.dev
+  - https://nx.dev/docs
+  - https://nx.dev/changelog
+  - https://nx.dev/pricing
+  - https://github.com/nrwl/nx
+  updated: '2026-05-25'
+created: '2026-05-25'
+modified: '2026-05-25'
+name: Nx
+description: Nx is a smart, fast, extensible monorepo build system and integrated CI platform created and
+  maintained by Nrwl. The Nx CLI (Rust core, TypeScript plugins) provides task orchestration, dependency-graph
+  analysis, affected-only execution, local caching, and code generation across Angular, React, Next.js, Node,
+  Vue, Vite, Webpack, Jest, Cypress, Playwright, Storybook, Gradle, .NET, Go, and dozens of other ecosystems.
+  Nx Cloud extends the CLI with remote caching, distributed task execution via Nx Agents, atomized E2E test
+  splitting, and AI-powered Self-Healing CI that detects, fixes, and retries failing pipelines. The Nx Console
+  IDE extension and Nx MCP server make the workspace graph and generators consumable by editors and AI agents
+  including Claude Code, Cursor, and Copilot. MIT licensed, with 28k+ GitHub stars, millions of monthly npm
+  downloads, and adoption by 30% of the Fortune 500.
+tags:
+- Monorepo
+- Build
+- BuildSystem
+- TaskRunner
+- DependencyGraph
+- Cache
+- RemoteCache
+- CI
+- DistributedExecution
+- DeveloperTools
+- DeveloperExperience
+- IDE
+- AI
+- Agents
+- MCP
+- ModelContextProtocol
+- TypeScript
+- JavaScript
+- Rust
+- OpenSource
+maintainers:
+- FN: Kin Lane
+  email: info@apievangelist.com
+  X: apievangelist
+  url: https://apievangelist.com
+specificationVersion: '0.16'
