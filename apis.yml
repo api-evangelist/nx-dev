@@ -89,7 +89,8 @@ apis:
     type: Documentation
   - url: https://nx.dev/recipes/nx-release
     type: Documentation
-  description: `nx release` is Nx's first-class versioning, changelog generation, and publishing pipeline for
+  description: |-
+    `nx release` is Nx's first-class versioning, changelog generation, and publishing pipeline for
     monorepos. Supports independent and fixed versioning, conventional commits, semantic versioning, GitHub
     Releases, and npm publishing. Works across the polyglot plugin ecosystem.
 - aid: nx-dev:nx-console
@@ -107,10 +108,10 @@ apis:
     type: SourceCode
   - url: https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console
     name: VS Code Marketplace
-    type: Tool
+    type: Tools
   - url: https://plugins.jetbrains.com/plugin/21060-nx-console
     name: JetBrains Marketplace
-    type: Tool
+    type: Tools
   description: Nx Console is the official IDE extension for Nx and Lerna, available for Visual Studio Code,
     Cursor, and JetBrains IDEs (WebStorm, IntelliJ, RustRover). Provides project detail views, generator UI,
     workspace and task visualization, Nx Cloud CI notifications, and AI chat enrichment that feeds workspace
@@ -211,18 +212,18 @@ common:
   type: Documentation
 - url: https://nx.dev/community
   name: Community
-  type: Forum
+  type: Forums
 - url: https://nx.dev/blog
   type: Blog
 - url: https://nx.dev/changelog
   name: Nx Changelog
-  type: Changelog
+  type: ChangeLog
 - url: https://nx.dev/pricing
   name: Nx Cloud Pricing
   type: Pricing
 - url: https://cloud.nx.app/get-started
   name: Nx Cloud Sign Up
-  type: SignUp
+  type: Signup
 - url: https://status.nx.app
   name: Nx Cloud Status
   type: StatusPage
@@ -254,20 +255,20 @@ common:
   name: create-nx-workspace (npm)
   type: Package
 - url: https://www.npmjs.com/org/nx
-  name: @nx scope on npm
+  name: "@nx scope on npm"
   type: Package
 - url: https://nx.dev/getting-started/editor-setup
   name: Editor Setup
   type: Documentation
 - url: https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console
   name: Nx Console for VS Code
-  type: Tool
+  type: Tools
 - url: https://plugins.jetbrains.com/plugin/21060-nx-console
   name: Nx Console for JetBrains
-  type: Tool
+  type: Tools
 - url: https://discord.gg/nx
   name: Nx Discord
-  type: Forum
+  type: Forums
 - url: https://x.com/nxdevtools
   name: Nx on X
   type: SocialMedia
@@ -296,9 +297,9 @@ common:
   - Affected commands (`nx affected -t build|test|lint`) run only what changed since a base ref
   - Local task caching with input-hash invalidation; worktree-aware in Nx 22.7
   - Task sandboxing (Nx 22.6) traces undeclared file I/O similar to Bazel
-  - `nx release` for versioning, changelog generation, and publishing
-  - `nx migrate` automates version upgrades with codemods for major Nx and plugin releases
-  - `nx sync` synchronizes generated files (TypeScript references, package.json deps) across the workspace
+  - "`nx release` for versioning, changelog generation, and publishing"
+  - "`nx migrate` automates version upgrades with codemods for major Nx and plugin releases"
+  - "`nx sync` synchronizes generated files (TypeScript references, package.json deps) across the workspace"
   - Nx Console IDE extension for VS Code, Cursor, and JetBrains IDEs
   - Nx MCP server — exposes workspace graph, generators, and docs to MCP-compatible AI agents
   - AI-enhanced chat in VS Code/Cursor through Nx Console workspace context injection
@@ -308,7 +309,7 @@ common:
   - Self-Healing CI — AI agent detects failed tasks, proposes fixes as PR suggestions, retries flaky tests
   - CI provider integrations: GitHub, GitLab, Bitbucket, Azure DevOps, CircleCI, Jenkins
   - Nx Cloud self-hosted deployment via Helm charts (Enterprise)
-  - `create-nx-workspace` scaffolds new workspaces; `nx init` adopts Nx incrementally
+  - "`create-nx-workspace` scaffolds new workspaces; `nx init` adopts Nx incrementally"
   - Conformance rules and circular-dependency detection (Enterprise)
   - Workspace analytics with CI duration percentiles
   sources:
