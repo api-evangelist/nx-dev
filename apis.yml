@@ -183,6 +183,8 @@ apis:
     structure, run generators, dispatch tasks, and consult version-correct Nx docs without hallucinating. Ships
     inside the nx-console extension and as a standalone command.
 common:
+- type: DomainSecurity
+  url: security/nx-dev-domain-security.yml
 - url: https://nx.dev
   name: Nx
   type: Portal

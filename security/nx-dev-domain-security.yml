@@ -1,0 +1,29 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: nx.dev
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 21 11:24:33 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: nrwl.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  6 05:49:40 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+domains:
+- domain: nx.dev
+  dnssec: true
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
+- domain: nrwl.io
+  dnssec: true
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
