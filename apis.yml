@@ -16,6 +16,11 @@ apis:
 - aid: nx-dev:nx-cli
   name: Nx CLI
   tags:
+  - Builds
+  - CLI
+  - Monorepo
+  - TaskRunner
+  tags_raw:
   - Build
   - CLI
   - Monorepo
@@ -57,6 +62,10 @@ apis:
 - aid: nx-dev:nx-graph-and-affected
   name: Nx Graph and Affected
   tags:
+  - Dependency-Graph
+  - AffectedCommands
+  - Monorepo
+  tags_raw:
   - DependencyGraph
   - AffectedCommands
   - Monorepo
@@ -110,6 +119,11 @@ apis:
   tags:
   - IDE
   - Editor
+  - VS Code
+  - JetBrains
+  tags_raw:
+  - IDE
+  - Editor
   - VSCode
   - JetBrains
   humanURL: https://nx.dev/getting-started/editor-setup
@@ -131,6 +145,10 @@ apis:
 - aid: nx-dev:nx-cloud-remote-cache
   name: Nx Cloud Remote Cache
   tags:
+  - Remote Cache
+  - CI
+  - NxCloud
+  tags_raw:
   - RemoteCache
   - CI
   - NxCloud
@@ -163,6 +181,12 @@ apis:
 - aid: nx-dev:nx-self-healing-ci
   name: Nx Self-Healing CI
   tags:
+  - Artificial Intelligence
+  - CI
+  - NxCloud
+  - Agents
+  - Self-Healing
+  tags_raw:
   - AI
   - CI
   - NxCloud
@@ -179,6 +203,10 @@ apis:
 - aid: nx-dev:nx-mcp
   name: Nx MCP Server
   tags:
+  - MCP
+  - Artificial Intelligence
+  - Agents
+  tags_raw:
   - MCP
   - AI
   - Agents
@@ -346,6 +374,26 @@ description: Nx is a smart, fast, extensible monorepo build system and integrate
   including Claude Code, Cursor, and Copilot. MIT licensed, with 28k+ GitHub stars, millions of monthly npm
   downloads, and adoption by 30% of the Fortune 500.
 tags:
+- Monorepo
+- Builds
+- Build System
+- TaskRunner
+- Dependency-Graph
+- Cache
+- Remote Cache
+- CI
+- DistributedExecution
+- Developer Tools
+- Developer Experience
+- IDE
+- Artificial Intelligence
+- Agents
+- MCP
+- TypeScript
+- JavaScript
+- Rust
+- Open-Source
+tags_raw:
 - Monorepo
 - Build
 - BuildSystem
