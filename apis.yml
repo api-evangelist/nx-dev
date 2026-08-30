@@ -74,7 +74,7 @@ apis:
 - aid: nx-dev:nx-graph-and-affected
   name: Nx Graph and Affected
   tags:
-  - Dependency-Graph
+  - DependencyGraph
   - AffectedCommands
   - Monorepo
   tags_raw:
@@ -131,7 +131,7 @@ apis:
   tags:
   - IDE
   - Editor
-  - VS Code
+  - VSCode
   - JetBrains
   tags_raw:
   - IDE
@@ -157,7 +157,7 @@ apis:
 - aid: nx-dev:nx-cloud-remote-cache
   name: Nx Cloud Remote Cache
   tags:
-  - Remote Cache
+  - RemoteCache
   - CI
   - NxCloud
   tags_raw:
@@ -197,7 +197,7 @@ apis:
   - CI
   - NxCloud
   - Agents
-  - Self-Healing
+  - SelfHealing
   tags_raw:
   - AI
   - CI
@@ -218,6 +218,7 @@ apis:
   - MCP
   - Artificial Intelligence
   - Agents
+  - ModelContextProtocol
   tags_raw:
   - MCP
   - AI
@@ -388,23 +389,24 @@ description: Nx is a smart, fast, extensible monorepo build system and integrate
 tags:
 - Monorepo
 - Builds
-- Build System
+- BuildSystem
 - TaskRunner
-- Dependency-Graph
+- DependencyGraph
 - Cache
-- Remote Cache
+- RemoteCache
 - CI
 - DistributedExecution
-- Developer Tools
-- Developer Experience
+- DeveloperTools
+- DeveloperExperience
 - IDE
 - Artificial Intelligence
 - Agents
 - MCP
+- ModelContextProtocol
 - TypeScript
 - JavaScript
 - Rust
-- Open-Source
+- OpenSource
 tags_raw:
 - Monorepo
 - Build
