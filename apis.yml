@@ -112,6 +112,11 @@ apis:
 - aid: nx-dev:nx-release
   name: Nx Release
   tags:
+  - Releases
+  - Versioning
+  - Publishing
+  - Changelog
+  tags_raw:
   - Release
   - Versioning
   - Publishing
@@ -390,7 +395,7 @@ description: Nx is a smart, fast, extensible monorepo build system and integrate
 tags:
 - Monorepo
 - Builds
-- Build System
+- Build Systems
 - TaskRunner
 - Dependency-Graph
 - Cache
