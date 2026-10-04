@@ -1,15 +1,20 @@
 aid: nx-dev
 deliveryModel:
-  model: unknown
-  open_source: unknown
+  model: open-core
+  license: MIT
+  license_evidence:
+    repo: nrwl/nx
+    spdx: MIT
+    stars: 29374
+  open_source: true
   commercial: true
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
-  confidence: low
+  label: Open core · an OSS project plus a commercial hosted product
+  confidence: medium
   source:
   - pricing
-  - repository-unlicensed
-  generated: '2026-08-28'
+  - repository-license
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: unknown
@@ -411,7 +416,7 @@ tags:
 - TypeScript
 - JavaScript
 - Rust
-- Open-Source
+- Open Source
 tags_raw:
 - Monorepo
 - Build
@@ -433,6 +438,7 @@ tags_raw:
 - JavaScript
 - Rust
 - OpenSource
+- Open-Source
 maintainers:
 - FN: Kin Lane
   email: info@apievangelist.com
