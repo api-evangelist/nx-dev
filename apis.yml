@@ -245,6 +245,12 @@ apis:
     structure, run generators, dispatch tasks, and consult version-correct Nx docs without hallucinating. Ships
     inside the nx-console extension and as a standalone command.
 common:
+- type: RateLimits
+  url: rate-limits/nx-dev-rate-limits.yml
+- type: Pricing
+  url: https://nx.dev/pricing
+- type: Plans
+  url: plans/nx-dev-plans-pricing.yml
 - type: Website
   url: https://www.nx.dev/
 - type: DomainSecurity
