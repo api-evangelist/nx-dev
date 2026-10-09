@@ -7,14 +7,17 @@ front_door_ai:
   probed_at: '2026-09-17'
   host: www.nx.dev
   final_host: nx.dev
-  ownership: inherited
+  ownership: own
   owner: nx-dev
   shares_host_with: null
-  inherited_from: nx.dev
+  inherited_from: null
+  alias_of: nx.dev
   verdict: scored
-  score: null
+  score: 2
+  band: 3
+  band_label: light
   host_score: 2
-  density: null
+  density: 3.28
   words: 609
   tiers:
     agentic: 0
